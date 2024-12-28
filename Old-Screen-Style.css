@@ -1,0 +1,75 @@
+/**
+ * @name Old Screen Style
+ * @author anora_09c
+ * @version 1.0.0
+ * @description A theme to imitate an old cathode ray screen
+ * @source none
+*/
+
+body::after{ 
+    content:" "; 
+    display:block; 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    bottom:0; 
+    right:0; 
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 50, 10, 0) 100%); 
+    z-index:100; 
+    background-size:100% 4px,4px 100%; 
+    pointer-events:none;
+    animation: gradientChange 0.1s infinite;
+}
+
+@keyframes gradientChange { 
+    0% {
+    content:" "; 
+    display:block; 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    bottom:0; 
+    right:0; 
+    background:linear-gradient(rgba(0, 25, 0, 0.6), rgba(0, 0, 0, 0) 100%); 
+    z-index:100; 
+    background-size:100% 4px,4px 100%; 
+    pointer-events:none;
+    } 
+    50% {
+    content:" "; 
+    display:block; 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    bottom:0; 
+    right:0; 
+    background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 25, 0, 0.6) 100%); 
+    z-index:100; 
+    background-size:100% 4px,4px 100%; 
+    pointer-events:none;
+    }
+    100% {
+    content:" "; 
+    display:block; 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    bottom:0; 
+    right:0; 
+    background:linear-gradient(rgba(0, 25, 0, 0.6), rgba(0, 0, 0, 0) 100%); 
+    z-index:100; 
+    background-size:100% 4px,4px 100%; 
+    pointer-events:none;
+    } 
+}
+
+.appAsidePanelWrapper_bd26cc{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #AAAAAA;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-weight: bold;
+    font-size: 20px;
+}
